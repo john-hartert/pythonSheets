@@ -13,6 +13,31 @@ client = gspread.authorize(creds)
 # This opens the spreadsheet.
 sheet = client.open("Copy of Legislators 2017").sheet1
 
-list_of_hashes = sheet.get_all_records()
+# # Pulls all data.
+# list_of_hashes = sheet.get_all_records()
+
+# # Pulls row. (Left to right)
+# list_of_hashes = sheet.row_values(1)
+
+# # Pulls column. (Top to bottom)
+# list_of_hashes = sheet.col_values(1)
+
+# # Pulls cell.
+# list_of_hashes = sheet.cell(2, 1).value
+
+# # Writes to spreadsheet.
+# list_of_hashes = sheet.update_cell(1, 1, "TEST TEST TEST TEST")
+
+# # Inserts row. (Left to right)
+# row = ["I'm", "inserting"]
+# index = 1
+# list_of_hashes = sheet.insert_row(row, index)
+
+# # Deletes rows.
+# list_of_hashes = sheet.delete_row(1)
+
+# # Counts all rows.
+list_of_hashes = sheet.row_count
+
 print(list_of_hashes)
 
