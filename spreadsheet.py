@@ -2,6 +2,8 @@
 # Shared this email with google sheets: legislators@python-sheets-180602.iam.gserviceaccount.com
 # Installed: pip install gspread oauth2client
 
+# gspread is a Python client library for the Google Sheets API.
+# Here's the docs.
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 
