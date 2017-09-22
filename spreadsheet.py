@@ -16,7 +16,7 @@ client = gspread.authorize(creds)
 sheet = client.open("Copy of Legislators 2017").sheet1
 
 # # Pulls all data.
-# list_of_hashes = sheet.get_all_records()
+list_of_hashes = sheet.get_all_records()
 
 # # Pulls row. (Left to right)
 # list_of_hashes = sheet.row_values(1)
@@ -39,7 +39,7 @@ sheet = client.open("Copy of Legislators 2017").sheet1
 # list_of_hashes = sheet.delete_row(1)
 
 # # Counts all rows.
-list_of_hashes = sheet.row_count
+# list_of_hashes = sheet.row_count
 
 print(list_of_hashes)
 
